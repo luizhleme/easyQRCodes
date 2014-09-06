@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="C:/wksp/EasyQRCodePrj/easyQRCodes.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/easyQRCodes/easyQRCodes.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="true" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" manifestLocation="/easyQRCodes/manifest" manifestVersion="1.0" reuseManifest="false" saveManifest="true" usesManifest="true">
+        <sealing sealJar="true">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="false" exportJavaFiles="false" exportOutputFolder="true">
+        <folder path="/easyQRCodes/target"/>
+        <file path="/easyQRCodes/.project"/>
+        <javaElement handleIdentifier="=easyQRCodes/src"/>
+        <file path="/easyQRCodes/pom.xml"/>
+        <file path="/easyQRCodes/.classpath"/>
+        <file path="/easyQRCodes/manifest"/>
+        <folder path="/easyQRCodes/bin"/>
+        <file path="/easyQRCodes/easyQRCodes.jardesc"/>
+    </selectedElements>
+</jardesc>
