@@ -8,11 +8,5 @@ package br.com.luizhleme.easyQRCodes.model.qrcode;
  */
 public interface IQrCodeConverter {
 
-	enum FileExtension {
-		NOT_DEFIDED,
-		JPG,
-		PGN;
-	}
-	
 	String getQrCodeText();
 }
