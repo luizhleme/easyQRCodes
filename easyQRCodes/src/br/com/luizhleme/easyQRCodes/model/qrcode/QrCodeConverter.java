@@ -2,10 +2,10 @@ package br.com.luizhleme.easyQRCodes.model.qrcode;
 
 import java.io.FileNotFoundException;
 
-import com.google.zxing.NotFoundException;
-
+import br.com.luizhleme.easyQRCodes.enums.FileExtension;
 import br.com.luizhleme.easyQRCodes.exception.QrCodeConverterException;
-import br.com.luizhleme.easyQRCodes.model.qrcode.IQrCodeConverter.FileExtension;
+
+import com.google.zxing.NotFoundException;
 
 /**
  * This class is a builder of {@link IQrCodeConverter} implementations.
