@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.Serializable;
 
+import br.com.luizhleme.easyQRCodes.enums.FileExtension;
 import br.com.luizhleme.easyQRCodes.exception.ImagemDomainException;
 import br.com.luizhleme.easyQRCodes.exception.QrCodeConverterException;
 import br.com.luizhleme.easyQRCodes.exception.QrCodeConverterException.ErrorCode;
@@ -48,7 +49,7 @@ final class BasicQrConverterImplementation implements IQrCodeConverter, Serializ
 					ErrorCode.INVALID_QRCODE_EXCEPTION);
 		}
 
-		if (extension == null || extension.equals(FileExtension.NOT_DEFIDED)) {
+		if (extension == null || extension.equals(FileExtension.NOT_DEFINED)) {
 			throw new QrCodeConverterException(
 					ErrorCode.INVALID_EXTENSION_EXCEPTION);
 		}
@@ -83,9 +84,9 @@ final class BasicQrConverterImplementation implements IQrCodeConverter, Serializ
 		new File(path).mkdirs();
 		
 		if (extension.equals(FileExtension.JPG)) {
-			fileName = fileName + ".jpg";
-		} else if (extension.equals(FileExtension.PGN)) {
-			fileName = fileName + ".png";
+			fileName = fileName + extension.getExtension();
+		} else if (extension.equals(FileExtension.PNG)) {
+			fileName = fileName + extension.getExtension();
 		}
 
 		try {
