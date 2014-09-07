@@ -16,6 +16,10 @@ public final class QrCode {
 		return new BasicQrCodeImplementation(text);
 	}
 	
+	public static IQrCode valueOf(String text, int heigth, int width) throws QrCodeDomainException {
+		return new BasicQrCodeImplementation(text, heigth, width);
+	}
+	
 	public static IQrCode emptyValue() throws QrCodeDomainException {
 		return new EmptyQrCode();
 	}
