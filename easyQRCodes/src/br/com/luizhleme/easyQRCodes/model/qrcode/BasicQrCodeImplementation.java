@@ -35,10 +35,14 @@ final class BasicQrCodeImplementation implements IQrCode, Serializable {
 	private int width = 0;
 
 	BasicQrCodeImplementation(String text) throws QrCodeDomainException {
-		init(text);
+		init(text, HEIGTH, WIDTH);
 	}
 
-	private void init(String text) throws QrCodeDomainException {
+	BasicQrCodeImplementation(String text, int heigth, int width) throws QrCodeDomainException {
+		init(text, heigth, width);
+	}
+
+	private void init(String text, int heigth, int width) throws QrCodeDomainException {
 		if (text == null || text.isEmpty()) {
 			throw new QrCodeDomainException(ErrorCode.NOT_VALID_VALUE);
 		} else if (text.length() == LENGTH) {
@@ -47,8 +51,8 @@ final class BasicQrCodeImplementation implements IQrCode, Serializable {
 		} else {
 			this.text = text;
 		}
-		this.height = HEIGTH;
-		this.width = WIDTH;
+		this.height = heigth;
+		this.width = width;
 		encode();
 	}
 
