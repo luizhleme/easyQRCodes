@@ -1,6 +1,4 @@
 easyQRCodes
-
-A  simple implementation to read and write QRCodes.
 ===========
 This is a simple Java project that implements a QRCode library called ZXing. With this project is possible to read and write a QRCode in a simple way.
 
